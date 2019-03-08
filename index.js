@@ -8,6 +8,7 @@ var passport   = require("./config/passport"); // 1
 var app = express();
 
 // DB setting
+
 mongoose.connect(process.env.MONGO_DB, {useNewUrlParser:true});
 var db = mongoose.connection;
 db.once("open", function(){
